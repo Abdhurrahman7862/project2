@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="download.png" />
+</head>
+
+<body>
+    <div style="display: flex;justify-content:center"><div>
+    <div class="in" style="background-color:blue;width:60%;">
+        <input type="number" name="" id="num1" style="margin:10px;padding:3px;width:80%"><input type="number" id="num2"
+            style="margin:10px;padding:3px;width:80%">
+    </div>
+    <div class="b" style="display: grid;grid-template-columns:1fr 1fr;width:60%;background-color:aquamarine;"><img
+            src="download (1).png" alt="" style="width:50%;margin:7px;margin-left:40%"onclick="add()"><img src="download (2).png"onclick="sub()" style="width:50%;margin:7px"><img
+            src="download (3).png" style="width:50%;margin:7px;margin-left:40%"onclick="mul()"><img src="download (4).png" style="width:50%;margin:7px"onclick="divi()"></div><!--<button onclick="add()">Add</button>
+    <button onclick="sub()">Subract</button><button onclick="mul()">Multiply</button><button onclick="divi()">Division</button>
+-->
+    <div class="res"style="background-color:yellow;width:60%">your answer:</div></div></div>
+    
+    <script>
+        var n1 = document.getElementById("num1")
+        var n2 = document.getElementById("num2")
+        var re = document.querySelector(".res")
+        function add() {
+            re.textContent = ("Addition of two number is:" + (Number(n1.value) + Number(n2.value)))
+        }
+        function sub() {
+            re.textContent = ("Subraction of two number is:" + (Number(n1.value) - Number(n2.value)))
+        }
+        function mul() {
+            re.textContent = ("Product of two number is:" + (Number(n1.value) * Number(n2.value)))
+        } function divi() {
+            re.textContent = ("division of two number is:" + (Number(n1.value) / Number(n2.value)))
+        }
+    </script>
+</body>
+
+</html>
